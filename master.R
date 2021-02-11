@@ -14,7 +14,7 @@ suppressMessages(suppressPackageStartupMessages(suppressWarnings(BiocManager::in
 suppressMessages(suppressPackageStartupMessages(suppressWarnings(require(AneuFinder))))
 
 Aneufinder(inputfolder='../Sequencing_data/test-aneufinder/', outputfolder='aneufinder_output/',
-           numCPU=1, method=c('edivisive', 'dnacopy','HMM'),
+           numCPU=2, method=c('edivisive', 'dnacopy','HMM'),
            configfile=NULL, reuse.existing.files=TRUE, binsizes=1e6, stepsizes=1e6, variable.width.reference=NULL, 
            reads.per.bin=NULL, pairedEndReads=TRUE, assembly=NULL, chromosomes=NULL, remove.duplicate.reads=TRUE, min.mapq=10, 
            blacklist=NULL, 
