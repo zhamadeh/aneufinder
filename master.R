@@ -13,7 +13,7 @@ suppressMessages(suppressPackageStartupMessages(suppressWarnings(require(BiocMan
 suppressMessages(suppressPackageStartupMessages(suppressWarnings(BiocManager::install("AneuFinder"))))
 suppressMessages(suppressPackageStartupMessages(suppressWarnings(require(AneuFinder))))
 
-Aneufinder(inputfolder='../Sequencing_data/ALL_GOOD_BAM_FILES/', outputfolder='aneufinder_output/',
+Aneufinder(inputfolder='../../Sequencing_data/ALL_GOOD_BAM_FILES/', outputfolder='aneufinder_output/',
            numCPU=10, method=c('edivisive', 'dnacopy','HMM'),
            configfile=NULL, reuse.existing.files=TRUE, binsizes=1e6, stepsizes=1e6, variable.width.reference=NULL, 
            reads.per.bin=NULL, pairedEndReads=TRUE, assembly=NULL, chromosomes=NULL, remove.duplicate.reads=TRUE, min.mapq=10, 
