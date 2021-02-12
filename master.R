@@ -12,6 +12,7 @@ suppressMessages(suppressPackageStartupMessages(suppressWarnings(require(Reorder
 suppressMessages(suppressPackageStartupMessages(suppressWarnings(require(BiocManager))))
 suppressMessages(suppressPackageStartupMessages(suppressWarnings(BiocManager::install("AneuFinder"))))
 suppressMessages(suppressPackageStartupMessages(suppressWarnings(require(AneuFinder))))
+suppressMessages(suppressPackageStartupMessages(suppressWarnings(require(BSgenome.Hsapiens.UCSC.hg19))))
 
 Aneufinder(inputfolder='../../Sequencing_data/ALL_GOOD_BAM_FILES/', outputfolder='aneufinder_output_bl/',
            numCPU=13, method=c('edivisive', 'dnacopy','HMM'),
