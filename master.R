@@ -16,7 +16,7 @@ suppressMessages(suppressPackageStartupMessages(suppressWarnings(require(AneuFin
 Aneufinder(inputfolder='../../Sequencing_data/ALL_GOOD_BAM_FILES/', outputfolder='aneufinder_output_bl/',
            numCPU=13, method=c('edivisive', 'dnacopy','HMM'),
            configfile=NULL, reuse.existing.files=TRUE, binsizes=1e5, stepsizes=1e5, variable.width.reference=NULL, 
-           reads.per.bin=NULL, pairedEndReads=TRUE, assembly="hg19", chromosomes=NULL, remove.duplicate.reads=TRUE, min.mapq=10, 
+           reads.per.bin=NULL, pairedEndReads=TRUE, assembly="hg19", chromosomes=c(1:22,"X","Y"), remove.duplicate.reads=TRUE, min.mapq=10, 
            blacklist="/projects/lansdorp/analyis/aneufinder_blacklist.bed.gz", 
            use.bamsignals=FALSE, reads.store=FALSE, correction.method="GC", GC.BSgenome="GC.bsgenome", strandseq=TRUE, 
            R=10, sig.lvl=0.1, eps=0.01, max.time=60, max.iter=5000, num.trials=15, states=c('zero-inflation',paste0(0:10,'-somy')), 
