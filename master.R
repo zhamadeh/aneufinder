@@ -17,9 +17,9 @@ suppressMessages(suppressPackageStartupMessages(suppressWarnings(require(BSgenom
 Aneufinder(inputfolder='../../Sequencing_data/ALL_GOOD_BAM_FILES/', outputfolder='aneufinder_output_bl/',
            numCPU=13, method=c('edivisive', 'dnacopy','HMM'),
            configfile=NULL, reuse.existing.files=TRUE, binsizes=1e5, stepsizes=1e5, variable.width.reference=NULL, 
-           reads.per.bin=NULL, pairedEndReads=TRUE, assembly="hg19", remove.duplicate.reads=TRUE, min.mapq=10, 
+           reads.per.bin=NULL, pairedEndReads=TRUE,remove.duplicate.reads=TRUE, min.mapq=10, 
            blacklist="/projects/lansdorp/analyis/aneufinder_blacklist.bed.gz", 
-           use.bamsignals=FALSE, reads.store=FALSE, strandseq=TRUE, 
+           use.bamsignals=FALSE, reads.store=FALSE, correction.method="GC", GC.BSgenome = BSgenome.Hsapiens.UCSC.hg19, strandseq=TRUE, 
            R=10, sig.lvl=0.1, eps=0.01, max.time=60, max.iter=5000, num.trials=15, states=c('zero-inflation',paste0(0:10,'-somy')), 
            confint=NULL, refine.breakpoints=FALSE, hotspot.bandwidth=NULL, hotspot.pval=5e-2, cluster.plots=TRUE)
 
